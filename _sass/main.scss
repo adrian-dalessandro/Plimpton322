@@ -9,19 +9,12 @@ body {
   background: #f1f1f1;
 }
 
+/* Header/Blog Title */
 .header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
   background: white;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -38,6 +31,20 @@ body {
   padding-left: 20px;
 }
 
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -45,10 +52,12 @@ body {
   clear: both;
 }
 
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
