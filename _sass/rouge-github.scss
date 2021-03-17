@@ -4,6 +4,15 @@
   color: #777772;
   font-style: italic;
 }
+
+.highlight div {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+
 .highlight .cp {
   color: #797676;
   font-weight: bold;
