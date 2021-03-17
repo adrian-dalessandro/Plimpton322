@@ -51,8 +51,12 @@ body {
 /* Add a card effect for articles */
 .card {
    background-color: white;
-   padding: 50px;
+   padding: 20px;
    margin-top: 20px;
+}
+
+.leftcolumn > .card {
+  padding: 50px;
 }
 
 .card > h1, .card > h2 {
