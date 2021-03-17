@@ -1,4 +1,4 @@
-<p>{{ site.data.authorship.picture }}<p>
+<img src="{{ site.data.authorship.picture |  relative_url }}">
 <h3>{{ site.data.authorship.name }}</h3>
 <p>{{ site.data.authorship.biography }}</p>
 {% for item in site.data.authorship.affiliations %}
