@@ -3,6 +3,9 @@
 {% for item in site.data.authorship.affiliations %}
       <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
+<hr>
+<div>
 {% for item in site.data.authorship.outgoing %}
-      <a href="{{ item.url }}">{{ item.title }}</a> <i class="fa fa-{{ item.icon }}" style="font-size:24px"></i>
+      <a href="{{ item.url }}" title="{{ item.title }}"><i class="fa fa-{{ item.icon }}" style="font-size:24px"></i></a>
 {% endfor %}
+</div>
