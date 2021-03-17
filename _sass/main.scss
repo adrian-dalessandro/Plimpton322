@@ -66,12 +66,18 @@ body {
 .leftcolumn > .card {
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 20%;
-  padding-right: 20%; 
+  padding-left: 16%;
+  padding-right: 16%; 
 }
 
 .post-body h1, .post-body h2 {
   border-bottom: 1px solid #d7d8c8;
+}
+
+.post-body > p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  text-align: justify;
 }
 
 .post-header h1 {
