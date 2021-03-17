@@ -13,6 +13,7 @@
   <body>
     {% include header.html %}
     {% capture post_content %}
+    <div class="card">
       <div class="post-header">
         <h1><b>{{ page.title }}</b></h1>
         <p> {{page.tagline}} </p>
@@ -26,6 +27,7 @@
       <div class="post-body">
         {{ content }}
       </div>
+    </div>
     {% endcapture %}
     {% include columns.html content=post_content %}
     {% include footer.html %}
