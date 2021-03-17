@@ -1,7 +1,22 @@
----
-layout: default
----
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
-{{ content }}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' |  relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <h1>{{ page.title }}</h1>
+    <p> {{page.tagline}} </p>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    <p>{{ page.tags }}</p>
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>
