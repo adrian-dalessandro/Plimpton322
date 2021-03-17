@@ -12,3 +12,4 @@ outgoing:
     icon: twitter
   - title: Email
     url: mailto:acdaless@sfu.ca
+    icon: envelope
