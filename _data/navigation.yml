@@ -3,8 +3,8 @@ nav:
 - title: Home
   url: /
 
-- title: Posts
-  url: /
+- title: Blog
+  url: /blog.html
   
 - title: About
   url: /
