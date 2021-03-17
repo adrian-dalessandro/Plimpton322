@@ -18,4 +18,4 @@ var fun = function lang(l) {
 
 Below is a sample of how mathjax renders latex:
 
-$$\sum_{i=1}^{m} \text{log}p(y^{(i)} | \mathbf{x}^{(i)}; \mathbf{\theta}})$$
+$$\mathcal{L}_{MSE} = \sum_{i=1}^{m} \text{log}p(y^{(i)} | \mathbf{x}^{(i)}; \mathbf{\theta}) = \ m \text{log} (\sigma) - \frac{m}{2}\text{log}(2\pi) - \sum_{i=1}^m \frac{||\hat{y}^{(i)} - y^{(i)}||}{2\sigma^2}$$
