@@ -141,3 +141,11 @@ a.nav-button:hover, a.nav-button:active {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+.post-body p:first-child:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
