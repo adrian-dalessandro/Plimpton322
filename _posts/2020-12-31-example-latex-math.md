@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Latex Equation Demo: Looking at Maximum A Posteriori Estimation"
-tagline: "A paragraph borrowed from wikipediaa to demonstrate how latex-style equation editing works within this blog"
+tagline: "A paragraph borrowed from wikipedia to demonstrate how latex-style equation editing works within this blog"
 author: Borrowed Wikipedia Entry
 excerpt_separator: <!--more-->
 tags: blog theory stats
 ---
-# Just An Example Post About Maximum Likelhood Estimation
 Assume that we want to estimate an unobserved population parameter $$\theta$$ on the basis of observations $$x$$. Let $$f$$ be the sampling distribution of $$x$$, so that $$f(x|\theta)$$ is the probability of $$x$$ when the underlying population parameter is $$\theta$$. Then the function:
 <!--more-->
 $$\theta \mapsto f(x|\theta)$$ is known as the likelihood function and the estimate:
