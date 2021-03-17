@@ -4,5 +4,5 @@
       <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
 {% for item in site.data.authorship.outgoing %}
-      <a href="{{ item.url }}">{{ item.title }}</a> {{ item.icon }}
+      <a href="{{ item.url }}">{{ item.title }}</a> <i class="fa fa-{{ item.icon }}" style="font-size:24px"></i>
 {% endfor %}
