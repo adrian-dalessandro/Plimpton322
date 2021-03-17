@@ -1,0 +1,14 @@
+picture: path/to/picture
+name: Adrian
+affiliations:
+  - title: Medical Image Analysis Lab @ SFU
+    url: https://www.medicalimageanalysis.com/
+outgoing:
+  - title: Github
+    url: https://github.com/adrian-dalessandro/
+    icon: github
+  - title: Twitter
+    url: https://twitter.com/AdrianoDAlessa3
+    icon: twitter
+  - title: Email
+    url: mailto:acdaless@sfu.ca
