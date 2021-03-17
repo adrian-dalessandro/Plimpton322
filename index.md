@@ -2,7 +2,9 @@
 layout: default
 title: Hello World
 ---
-# Code Demo
+# Welcome to Plimpton322
+
+## Code Demo
 
 Below is a brief exerpt demonstrating code blocks:
 
@@ -14,7 +16,7 @@ var fun = function lang(l) {
 }
 ```
 
-# Latex Equation Demo
+## Latex Equation Demo
 
 Below is a sample of how mathjax renders latex:
 
