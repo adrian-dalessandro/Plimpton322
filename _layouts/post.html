@@ -13,11 +13,15 @@
   <body>
     {% include header.html %}
     {% capture post_content %}
-      <h1>{{ page.title }}</h1>
-      <p> {{page.tagline}} </p>
-      <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-      <p>{{ page.tags }}</p>
-      {{ content }}
+      <div class="post-header">
+        <h1>{{ page.title }}</h1>
+        <p> {{page.tagline}} </p>
+        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+        <p>{{ page.tags }}</p>
+      </div>
+      <div class="post-body">
+        {{ content }}
+      </div>
     {% endcapture %}
     {% include columns.html content=post_content %}
     {% include footer.html %}
