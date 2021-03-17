@@ -70,6 +70,16 @@ body {
   padding-right: 16%; 
 }
 
+p.tagline {
+  margin: auto;
+  font-size: small;
+  color: gray;
+}
+
+p.bloginfo {
+  font-size: small;
+}
+
 .post-body h1, .post-body h2 {
   border-bottom: 1px solid #d7d8c8;
 }
