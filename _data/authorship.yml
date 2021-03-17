@@ -1,4 +1,4 @@
-picture: path/to/picture
+picture: /assets/images/headshot.png
 name: Adrian D'Alessandro
 biography: I'm a Graduate Student at SFU studying computer vision, deep learning, weak supervision, and plant agriculture.
 affiliations:
