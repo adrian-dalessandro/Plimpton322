@@ -16,6 +16,14 @@ var fun = function lang(l) {
 }
 ```
 
+```python
+# python code with syntax highlighting.
+import tensorflow as tf
+
+def fake_custom_loss(y_pred, y_true):
+  return tf.keras.losses.mean_squared_error(y_pred, y_true)
+```
+
 ## Latex Equation Demo
 
 Below is a sample of how mathjax renders latex-stype equations:
