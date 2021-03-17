@@ -6,7 +6,7 @@ author: Adrian D'Alessandro
 excerpt_separator: <!--more-->
 tags: blog tensorflow python
 ---
-The best way to implement your own layer is extending the tf.keras.Layer class and implementing:
+While there are many wayds to implement custom layers within the tensorflow framework, by far the simplest way to implement your own layer is extending the tf.keras.Layer class and implementing:
 1. \__init__ , where you can do all input-independent initialization
 2. build, where you know the shapes of the input tensors and can do the rest of the initialization
 3. call, where you do the forward computation
