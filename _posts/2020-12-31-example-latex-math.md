@@ -7,11 +7,9 @@ excerpt_separator: <!--more-->
 tags: blog theory stats
 ---
 # Just An Example Post About Maximum Likelhood Estimation
-ssume that we want to estimate an unobserved population parameter $\theta$ on the basis of observations $x$. Let $f$ be the sampling distribution of $x$, so that $f(x|\theta)$ is the probability of $x$ when the underlying population parameter is $\theta$. Then the function:
+ssume that we want to estimate an unobserved population parameter $$\theta$$ on the basis of observations $$x$$. Let $$f$$ be the sampling distribution of $$x$$, so that $$f(x|\theta)$$ is the probability of $$x$$ when the underlying population parameter is $$\theta$$. Then the function:
 <!--more-->
-$$\theta \mapsto f(x|\theta)$$
-
-is known as the likelihood function and the estimate:
+$$\theta \mapsto f(x|\theta)$$ is known as the likelihood function and the estimate:
 
 $$\hat{\theta}_{MLE}(x) =\underset{\theta}{\text{arg max}} f(x|\theta)$$
 
