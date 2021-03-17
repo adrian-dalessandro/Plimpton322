@@ -13,9 +13,9 @@ $$\theta \mapsto f(x|\theta)$$ is known as the likelihood function and the estim
 
 $$\hat{\theta}_{MLE}(x) =\underset{\theta}{\text{arg max}} f(x|\theta)$$
 
-is the maximum likelihood estimate of $\theta$ .
+is the maximum likelihood estimate of $$\theta$$ .
 
-Now assume that a prior distribution $g$ over $\theta$ exists. This allows us to treat {$\theta$  as a random variable as in Bayesian statistics. We can calculate the posterior distribution of $\theta$ using Bayes' theorem:
+Now assume that a prior distribution $$g$$ over $$\theta$$ exists. This allows us to treat $$\theta$$  as a random variable as in Bayesian statistics. We can calculate the posterior distribution of $$\theta$$ using Bayes' theorem:
 
 $$\theta \mapsto f(\theta|x) = \frac{f(x|\theta)g(\theta)}{\int_{\Theta} f(x|\vartheta)g(\vartheta)d\vartheta}$$
 
