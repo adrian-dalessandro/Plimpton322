@@ -1,8 +1,1 @@
 <p>{% site.data.authorship.picture %}</p>
-<h3>{% site.data.authorship.picture %}</h3>
-{% for item in site.data.authorship.affiliation %}
-      <a href="{{ item.url }}">{{ item.title }}</a>
-{% endfor %}
-{% for item in site.data.authorship.outgoing %}
-      <a href="{{ item.url }}">{{ item.title }}</a> {{ item.icon }}
-{% endfor %}
