@@ -79,11 +79,9 @@ body {
 
 .link-card h4 {
   display:inline;
-  color: #111;
-  transition: color 500ms;
 }
 
-.link-card:hover > h4 {
+.link-card:hover a.post-link {
   color: 	#BF5700;
   font-weight: bold;
 }
@@ -95,6 +93,8 @@ body {
 
 a.post-link {
   text-decoration: none;
+  color: #111;
+  transition: color 500ms;
 }
 
 p.tagline {
