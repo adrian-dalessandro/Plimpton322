@@ -11,17 +11,26 @@
   </head>
   <body>
     {% include header.html %}
-    {% include columns.html content=content %}
-    <h1>Latest Posts</h1>
-
-    <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-    </ul>
+    {% capture post_content %}
+      <div class="card post-card">
+      {{content}}
+      </div>
+      <h1>Latest Posts</h1>
+      {% for post in site.posts %}
+      <div class="card link-card">
+        <p class="link-buttons">
+        {% for tag in post.tags %}
+           <button>{{ tag }}</button>
+        {% endfor %}
+        </p>
+        <h4><b><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h4>
+        <p class="bloginfo">{{ post.author }} | {{ post.date | date_to_string }}</p>
+        <p class="tagline"> {{post.tagline}} </p>
+      </div>
+      {% endfor %}
+    {% endcapture %}
+    
+    {% include columns.html content=post_content %}
     {% include footer.html %}
   </body>
 </html>
