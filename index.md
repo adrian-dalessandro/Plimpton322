@@ -2,7 +2,7 @@
 layout: default
 title: Hello World
 ---
-# Welcome to Plimpton322
+# Welcome to Plimpton 322
 
 ## Code Demo
 
