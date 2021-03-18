@@ -14,7 +14,7 @@
     {% capture post_content %}
     {% for post in site.posts %}
     <div class="card link-card">
-      <p>
+      <p class="link-buttons">
       {% for tag in post.tags %}
          <button>{{ tag }}</button>
       {% endfor %}
