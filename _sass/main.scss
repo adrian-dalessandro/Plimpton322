@@ -80,6 +80,12 @@ body {
 .link-card h4 {
   display:inline;
   color: #111;
+  transition: color 500ms;
+}
+
+.link-card:hover > h4 {
+  color: 	#BF5700;
+  font-weight: bold;
 }
 
 .link-buttons {
