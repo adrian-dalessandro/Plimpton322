@@ -13,7 +13,7 @@
     {% include header.html %}
     {% capture post_content %}
     {% for post in site.posts %}
-    <div class="card-trimmed">
+    <div class="link-card">
       <h4><b><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h4>
       <p class="tagline"> {{post.tagline}} </p>
       <p class="bloginfo">{{ post.author }} | {{ post.date | date_to_string }} | 
