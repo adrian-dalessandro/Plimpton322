@@ -77,6 +77,10 @@ body {
   padding-right: 5%; 
 }
 
+.link-card h4 {
+  display:inline;
+}
+
 a.post-link {
   text-decoration: none;
 }
@@ -89,6 +93,7 @@ p.tagline {
 
 p.bloginfo {
   font-size: small;
+  display:inline;
 }
 
 .post-body h1, .post-body h2 {
