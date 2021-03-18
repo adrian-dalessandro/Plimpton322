@@ -74,11 +74,16 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5%;
-  padding-right: 5%; 
+  padding-right: 5%;
+  transition: box-shadow 500ms;
 }
 
 .link-card h4 {
   display:inline;
+}
+
+.link-card:hover {
+  box-shadow: 0 13px 17px -21px #555;
 }
 
 .link-card:hover a.post-link {
