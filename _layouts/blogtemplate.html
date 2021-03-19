@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' |  relative_url }}">
   </head>
-  <body>
+  <body class="{{ site.accent }}">
     {% include header.html %}
     {% capture post_content %}
     {% for post in site.posts %}
