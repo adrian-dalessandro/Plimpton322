@@ -15,11 +15,11 @@
       <div class="card index-card">
       {{content}}
       </div>
-      <div class="card index-card">
+      <div class="index-card">
       <h3>Latest Posts</h3>
       </div>
       {% for post in site.posts %}
-      <div class="card link-card">
+      <div class="link-card">
         <p class="link-buttons">
         {% for tag in post.tags %}
            <button>{{ tag }}</button>
