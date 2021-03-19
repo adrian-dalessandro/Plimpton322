@@ -9,8 +9,9 @@
     <title>{{ page.title }}</title>
     
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' |  relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/accents.css' |  relative_url }}">
   </head>
-  <body>
+  <body class=".green">
     {% include header.html %}
     {% capture post_content %}
     <div class="card post-card">
