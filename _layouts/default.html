@@ -33,10 +33,6 @@
     {% endcapture %}
     
     {% include columns.html content=post_content %}
-    
-    {% for tag in site.tags.blog %}
-     <p> Title: {{ tag.title }} </p>
-    {% endfor %}
     {% include footer.html %}
   </body>
 </html>
