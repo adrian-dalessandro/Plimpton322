@@ -10,3 +10,4 @@ TODO
 ## Personalizing
 TODO
 ### Accents
+ ![smiley](/assets/images/headshot.png){:height="36px" width="36px"}
