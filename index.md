@@ -10,4 +10,4 @@ TODO
 ## Personalizing
 TODO
 ### Accents
-<img src="/assets/images/headshot.png" alt="drawing" width="50%"/>
+<img src="./assets/images/headshot.png" alt="drawing" width="50%"/>
