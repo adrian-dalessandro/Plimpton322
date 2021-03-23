@@ -14,13 +14,13 @@
     
     {% capture left_content %}
       {% for item in page.leftcolumn %}
-        {% include {{item}}.html content=content %}
+        {% include {{item}}.html content={{content}} %}
       {% endfor %}
     {% endcapture %}
     
     {% capture right_content %}
       {% for item in page.rightcolumn %}
-        {% include {{item}}.html content=content %}
+        {% include {{item}}.html content={{content}} %}
       {% endfor %}
     {% endcapture %}
     
