@@ -18,21 +18,17 @@
     
     {% capture left_content %}
       {% for item in page.leftcolumn %}
-        {% include {{item}}.html content="testing" %}
+        {% include {{item}}.html content=content_var %}
       {% endfor %}
     {% endcapture %}
     
     {% capture right_content %}
       {% for item in page.rightcolumn %}
-        {% include {{item}}.html content="testing" %}
+        {% include {{item}}.html content=content_var %}
       {% endfor %}
     {% endcapture %}
     
-    
-    {{ left_content }}
-    {{ right_content }}
-    
-    {{ content }}
-    {{ content_var }}
+    {% include adaptive_col.html right=right_content left=left_content %}
+
   </body>
 </html>
