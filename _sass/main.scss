@@ -131,6 +131,14 @@ p.bloginfo {
   word-spacing:-1px;
 }
 
+@media screen and (max-width: 700px) {
+  .post-body > p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
 .post-header h1 {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 50px;
