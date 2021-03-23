@@ -12,15 +12,19 @@
   <body class="{{ site.accent }}">
     {% include header.html %}
     
+    {% capture content_var %}
+      {{ content }}
+    {% endcapture %}
+    
     {% capture left_content %}
       {% for item in page.leftcolumn %}
-        {% include {{item}}.html content={{content}} %}
+        {% include {{item}}.html content=content_var %}
       {% endfor %}
     {% endcapture %}
     
     {% capture right_content %}
       {% for item in page.rightcolumn %}
-        {% include {{item}}.html content={{content}} %}
+        {% include {{item}}.html content=content_var %}
       {% endfor %}
     {% endcapture %}
     
