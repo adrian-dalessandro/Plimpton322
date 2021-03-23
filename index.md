@@ -7,6 +7,11 @@ Are you a researcher or scientist in search of a blogging platform with support 
 ## How to Setup
 TODO
 
+## Custom Pages
+TODO
+
+## Blogging
+
 ## Personalizing
 TODO
 
