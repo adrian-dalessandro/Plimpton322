@@ -1,7 +1,9 @@
 $accents:
   "green" #274e13 #38761d #b6d7a8,
   "teal" #0c343d #134f5c #a2c4c9,
-  "orange" #783f04 #b45f06 #b45f06;
+  "orange" #783f04 #b45f06 #b45f06,
+  "red" #660000 #990000 #f4cccc,
+  "purple" #20124d #351c75 #d9d2e9;
 
 @each $color, $dark, $middle, $light in $accents {
   .#{$color} h1 {
