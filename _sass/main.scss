@@ -1,6 +1,54 @@
+/* ---------[ Global Style ] ----------------*/
 * {
   box-sizing: border-box;
 }
+
+/* ---------[ Header Style ] ----------------*/
+.header {
+  padding: 13px;
+  text-align: left;
+}
+
+.header > #site-title {
+   margin-block: auto;
+   font-size: 30px;
+   display: inline;
+}
+
+.header > #site-discription {
+  font-size: 20px;
+  margin-block: auto;
+  color: #666;
+  display: inline;
+  margin-left: 20px;
+}
+
+/* ---------[ Navbar Style ] ----------------*/
+
+.navbar {
+  display: block;
+  padding: 5px 0px;
+  border-bottom: 2px solid gray;
+  overflow: hidden;
+}
+
+.navbar > .nav-button {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  paddding: 10px 20px;
+  text-decoration: Areal;
+  font-weighe: bold;
+  margin-righe: 10px;
+}
+
+a.nav-button:hover, a.nav-button:active {
+  background-color: LightGray;
+  color: #36454f;
+}
+
+/* ---------[ ______ Style ] ----------------*/
+
 img.headshot {
   max-width: 100%;
   border-radius:4px;
@@ -19,22 +67,6 @@ body {
 }
 
 /* Header/Blog Title */
-.header {
-  padding: 10px;
-  text-align: left;
-}
-
-.header h2 {
-   margin-block: auto;
-   font-size: 30px;
-   display: inline;
-}
-
-.header p {
-   font-size: 20px;
-   margin-block: auto;
-   color: #666;
-}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -183,26 +215,7 @@ p.bloginfo {
   }
 }
 
-a.nav-button:hover, a.nav-button:active {
-  background-color: LightGray;
-  color: #36454f;
-}
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 14px;
-  color: white;
-  text-align: center;
-  padding: 9px 16px;
-  text-decoration: none;
-  font-family: Arial;
-  font-weight: bold;
-}
 
 .post-body p:first-child:first-letter {
     float: left;
