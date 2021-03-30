@@ -55,7 +55,18 @@ a.nav-button:hover, a.nav-button:active {
   color: #36454f;
 }
 
-/* ---------[ ______ Style ] ----------------*/
+/* ---------[ Card Base Style ] ----------------*/
+.card h1 h2 h3 h4 {
+  font-family: "Roboto";
+}
+
+.card p {
+  font-family: "Lora";
+}
+
+
+
+/* ---------[ Card Base Style ] ----------------*/
 
 img.headshot {
   max-width: 100%;
