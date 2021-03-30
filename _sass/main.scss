@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f7f7f7;
+  color: #36454f;
+}
+
+
 /* ---------[ Header Style ] ----------------*/
 .header {
   padding: 13px;
@@ -27,9 +35,10 @@
 
 .navbar {
   display: block;
-  padding: 5px 0px;
+  padding: 7px 0px;
   border-bottom: 2px solid gray;
   overflow: hidden;
+  box-shadow: 0 8px 11px -6px grey;
 }
 
 .navbar > .nav-button {
@@ -58,15 +67,7 @@ i.affiliate {
    color: #262626;
    padding-right: 10px;
 }
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f7f7f7;
-  color: #36454f;
-}
 
-/* Header/Blog Title */
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
