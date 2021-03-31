@@ -84,6 +84,9 @@ span.paginate {
   color: black;
   display: inline-block;
   padding: 8px 16px;
+}
+
+span.page_number {
   margin: 5%;
 }
 
@@ -102,7 +105,7 @@ a.paginate:hover {
 
 div.paginate {
   margin: auto;
-  width: 60%;
+  text-align: center;
 }
 
 
