@@ -4,7 +4,7 @@ nav:
   url: /
 
 - title: Blog
-  url: /blog.html
+  url: /blog/
   
 - title: About
   url: /about.html
