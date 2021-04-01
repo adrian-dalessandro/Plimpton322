@@ -36,15 +36,19 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 
 ### Accents
 __green__ _(default)_:  
-![Green Accents](./assets/images/green_accent.png)  
+![Green Accents](./assets/images/green_accent.png)
+|
 __orange__:   
-![Orange Accents](./assets/images/orange_accent.png)  
+![Orange Accents](./assets/images/orange_accent.png)
+|
 __teal__:  
-![Teal Accents](./assets/images/teal_accent.png)  
+![Teal Accents](./assets/images/teal_accent.png)
+|
 __red__:  
-![Red Accents](./assets/images/red_accent.png)  
+![Red Accents](./assets/images/red_accent.png)
+|
 __purple__:  
-![Purple Accents](./assets/images/purple_accent.png)  
+![Purple Accents](./assets/images/purple_accent.png)
 ### Author Cards
 ### Adaptive Pages
 ### Facebook Comments
