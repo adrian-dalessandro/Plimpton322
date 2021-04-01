@@ -3,3 +3,4 @@ description: A jekyll theme for scientific blogging
 accent: green
 paginate: 5
 paginate_path: "/blog/page:num/"
+fb_comments_on: true
