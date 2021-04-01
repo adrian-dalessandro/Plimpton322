@@ -10,6 +10,17 @@ beyond this, our goal is to provide an aesthetic & somewhat minimalist theme wit
 
 ## Customizing
 ### Configuration variables
+By default, the global configuration variables are stored in `_config.yml`. These are accessed through the `site._your_variable_` liquid variable throughout the project. The basic set of global configuration variables are:
+
+```
+title: Plimpton 322
+description: A jekyll theme for scientific blogging
+accent: green
+paginate: 5
+paginate_path: "/blog/page:num/"
+fb_comments_on: "true"
+```
+
 ### Accents
 ### Author Cards
 ### Adaptive Pages
