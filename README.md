@@ -35,11 +35,11 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 ```
 
 ### Accents
-__green__ _(default)_: 
+__green__ _(default)_:  
 ![Green Accents](./assets/images/green_accent.png)  
 __orange__:   
 ![Orange Accents](./assets/images/orange_accent.png)  
-__teal__: 
+__teal__:  
 ![Teal Accents](./assets/images/teal_accent.png)  
 
 ### Author Cards
