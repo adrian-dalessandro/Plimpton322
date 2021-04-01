@@ -8,6 +8,19 @@ The philosophy behind this project is to support scientific bloggers & scientifi
 
 beyond this, our goal is to provide an aesthetic & somewhat minimalist theme with built in customization options.
 
+## Writing Posts
+By default, this theme follows the default [Jekyll method for post writing](https://jekyllrb.com/docs/posts/). Briefly summarizing, all posts can be directly committed to your github account as either a markdown file or an html files. Each post must be saved in the `_post/` directory with the following format:
+```
+YEAR-MONTH-DAY-title.MARKUP
+```
+
+For example, the following are valid posts:
+
+```
+2021-12-31-example-latex-math.md
+2021-12-30-example-python-blog-post.md
+```
+
 ## Customizing
 ### Configuration variables
 By default, the global configuration variables are stored in `_config.yml`. These are accessed through the `site._your_variable_` liquid variable throughout the project. The basic set of global configuration variables are:
