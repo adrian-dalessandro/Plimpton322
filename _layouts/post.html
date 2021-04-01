@@ -30,7 +30,6 @@
         <div class="post-body">
           {{ content }}
         </div>
-        {{ site.fb_comments_on }}
         {% if site.fb_comments_on == "true" %}
           {% include fbcomments.html %}
         {% endif %}
