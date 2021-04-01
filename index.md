@@ -7,33 +7,54 @@ rightcolumn:
   - affiliation
   - post_list
 ---
-## Introduction
-Are you a researcher or scientist in search of a blogging platform with support for latex-style equations and code blocks? Look no further than Plimpton 322. This theme is backed by the static site generator Jekyll and can easily be deployed through github pages in a matter of seconds. Just fork, setup pages, and edit the content.
-## How to Setup
-TODO
+# The Plimpton322 Theme
+Plimpton322 is a Jekyll theme for GitHub Pages that is primarily targeted towards academic and scientific blogging. [You can preview the theme to see what it looks like](https://adrian-dalessandro.github.io/Plimpton322/ "Preview Plimpton322"), or even fork the project and use it today.
 
-## Custom Pages
-TODO
+## Scientific Blogging
+The philosophy behind this project is to support scientific bloggers & scientific communication. To do so, we provide a theme with out-of-the-box support for:
+1. Latex-style equation support via MathJax ([see this post for an example](https://adrian-dalessandro.github.io/Plimpton322/2021/12/31/example-latex-math.html))
+2. Markdown-style code blocks ([see this post for an example](https://adrian-dalessandro.github.io/Plimpton322/2021/12/30/example-python-blog-post.html))
 
-## Blogging
+beyond this, our goal is to provide an aesthetic & somewhat minimalist theme with built in customization options.
 
-## Personalizing
-TODO
+## Writing Posts
+By default, this theme follows the default [Jekyll method for post writing](https://jekyllrb.com/docs/posts/). Briefly summarizing, all posts can be directly committed to your github account as either a markdown file or an html files. Each post must be saved in the `_post/` directory with the following format:
+```
+YEAR-MONTH-DAY-title.MARKUP
+```
 
-### Author Card
-TODO
-### Navigation
-TODO
+For example, the following are valid posts:
 
-### Accent
-Plimpton 322 supports simple customization options, such as changing the site accent colour. There are several accents supported, and these can be specified in the `_config.yaml` file under the `accent:` paramater. The following accents are currently supported:
+```
+2021-12-31-example-latex-math.md
+2021-12-30-example-python-blog-post.md
+```
 
-__Green__ _(default)_:  
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAA8CAIAAABATAfQAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpSIVBzsUEclQnSyIijhqFYpQIdQKrTqYvPQPmjQkKS6OgmvBwZ/FqoOLs64OroIg+APi5uak6CIl3pcUWsT44PE+znvncO99gNCoMM3qGgc03TbTyYSYza2KoVcEEQEwjKjMLGNOklLwXV/3CPDzLs6z/N/9ufrUvMWAgEg8ywzTJt4gnt60Dc77xBFWklXic+IxkwokfuS64vEb56LLAs+MmJn0PDHvQCx2sNLBrGRqxFPEMVXTKV/Ieqxy3uKsVWqsVSfvMJzXV5a5TnsISSxiCRJEKKihjApsxOnUSbGQpvuEj3/Q9UvkUshVBiPHAqrQILt+8D/4PVurMDnhJYUTQPeL43yMAKFdoFl3nO9jx2meAMFn4Epv+6sNYOaT9Hpbix0B/dvAxXVbU/aAyx0g+mTIpuxKQdpCoQC8n9E35YCBW6B3zZtb6x6nD0CGZpW6AQ4OgdEiZa/79N3TObd/37Tm9wMtC3KLoFDdzAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UDFAAhHmQWsgkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAk0lEQVR42u3SQQ0AIBADwYMnP4IIUIMHjGAA0+i4ZEZB02yZe0Q2fbV0m+956TbXAHEgDsSBOBAH4kAciANxIA4QB+JAHIgDcSAOxIE4EAfiAHEgDsSBOBAH4kAciANxIA7E4QLEgTgQB+JAHIgDcSAOxIE4QByIA3EgDsSBOBAH4kAciAPEgTgQB+JAHIgDcZDUB/BNAq2nXR53AAAAAElFTkSuQmCC">    
+## Customizing
+### Configuration variables
+By default, the global configuration variables are stored in `_config.yml`. These are accessed through the `site._your_variable_` liquid variable throughout the project. The basic set of global configuration variables are:
 
-__Orange__:  
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAA8CAIAAABATAfQAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpSIVBzsUEclQnSyIijhqFYpQIdQKrTqYvPQPmjQkKS6OgmvBwZ/FqoOLs64OroIg+APi5uak6CIl3pcUWsT44PE+znvncO99gNCoMM3qGgc03TbTyYSYza2KoVcEEQEwjKjMLGNOklLwXV/3CPDzLs6z/N/9ufrUvMWAgEg8ywzTJt4gnt60Dc77xBFWklXic+IxkwokfuS64vEb56LLAs+MmJn0PDHvQCx2sNLBrGRqxFPEMVXTKV/Ieqxy3uKsVWqsVSfvMJzXV5a5TnsISSxiCRJEKKihjApsxOnUSbGQpvuEj3/Q9UvkUshVBiPHAqrQILt+8D/4PVurMDnhJYUTQPeL43yMAKFdoFl3nO9jx2meAMFn4Epv+6sNYOaT9Hpbix0B/dvAxXVbU/aAyx0g+mTIpuxKQdpCoQC8n9E35YCBW6B3zZtb6x6nD0CGZpW6AQ4OgdEiZa/79N3TObd/37Tm9wMtC3KLoFDdzAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UDFAAsB7XTZIQAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAk0lEQVR42u3SUQkAIQBEwfMwiEEEv2xjAJOY1x9LLMwkWJZX9qhfmt7+uM1znbjNeS8jDsSBOBAH4kAciAPEgTgQB+JAHIgDcSAOxIE4QByIA3EgDsSBOBAH4kAciAPEgTgQB+JAHIgDcSAOxIE4EAeIA3EgDsSBOBAH4kAciANxgDgQB+JAHIgDcSAOxIE4EAc8F1wQAtgXvbisAAAAAElFTkSuQmCC">    
+```yaml
+title: Plimpton 322 # This is the title of the site and controls the emphasized text in the site header
+description: A jekyll theme for scientific blogging # This is a short site description that follows the title text
+accent: green # This selects the sites colour-scheme, as explained below
+paginate: 5 # This is the number of pages to dislay per page on the blog list page
+paginate_path: "/blog/page:num/" # This controls the path to the different pages of the blog post
+fb_comments_on: "true" # This toggles whether or not to use the facebook comments plugin
+```
 
-__Teal__:  
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAA8CAIAAABATAfQAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpSIVBzsUEclQnSyIijhqFYpQIdQKrTqYvPQPmjQkKS6OgmvBwZ/FqoOLs64OroIg+APi5uak6CIl3pcUWsT44PE+znvncO99gNCoMM3qGgc03TbTyYSYza2KoVcEEQEwjKjMLGNOklLwXV/3CPDzLs6z/N/9ufrUvMWAgEg8ywzTJt4gnt60Dc77xBFWklXic+IxkwokfuS64vEb56LLAs+MmJn0PDHvQCx2sNLBrGRqxFPEMVXTKV/Ieqxy3uKsVWqsVSfvMJzXV5a5TnsISSxiCRJEKKihjApsxOnUSbGQpvuEj3/Q9UvkUshVBiPHAqrQILt+8D/4PVurMDnhJYUTQPeL43yMAKFdoFl3nO9jx2meAMFn4Epv+6sNYOaT9Hpbix0B/dvAxXVbU/aAyx0g+mTIpuxKQdpCoQC8n9E35YCBW6B3zZtb6x6nD0CGZpW6AQ4OgdEiZa/79N3TObd/37Tm9wMtC3KLoFDdzAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UDFAAxC0MJRLMAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAlElEQVR42u3SMQ0AIBAEwYeGBgcUmKBFEiU6sIyOT2YUXC5b+tqRTRsz3eZ3T7rNNUAciANxIA7EgTgQB+JAHIgDxIE4EAfiQByIA3EgDsSBOEAciANxIA7EgTgQB+JAHIgDcbgAcSAOxIE4EAfiQByIA3EgDhAH4kAciANxIA7EgTgQB+IAcSAOxIE4EAfiQBwk9QHuvwKnc5fHtgAAAABJRU5ErkJggg==">    
+### Accents
+__green__ _(default)_:  
+![Green Accents](./assets/images/green_accent.png)  
+__orange__:   
+![Orange Accents](./assets/images/orange_accent.png)  
+__teal__:  
+![Teal Accents](./assets/images/teal_accent.png)  
 
+### Author Cards
+### Adaptive Pages
+### Facebook Comments
+
+## Project philosophy
+
+## Contributing
