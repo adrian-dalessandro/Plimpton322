@@ -12,7 +12,7 @@ beyond this, our goal is to provide an aesthetic & somewhat minimalist theme wit
 ### Configuration variables
 By default, the global configuration variables are stored in `_config.yml`. These are accessed through the `site._your_variable_` liquid variable throughout the project. The basic set of global configuration variables are:
 
-```
+```json
 title: Plimpton 322
 description: A jekyll theme for scientific blogging
 accent: green
