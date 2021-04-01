@@ -36,6 +36,8 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 
 ### Accents
 ![Green Accents](./assets/images/green_accent.png)
+![Orange Accents](./assets/images/orange_accent.png)
+![Teal Accents](./assets/images/teal_accent.png)
 
 ### Author Cards
 ### Adaptive Pages
