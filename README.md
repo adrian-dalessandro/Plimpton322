@@ -14,11 +14,11 @@ By default, the global configuration variables are stored in `_config.yml`. Thes
 
 ```yaml
 title: Plimpton 322 # This is the title of the site and controls the emphasized text in the site header
-description: A jekyll theme for scientific blogging
-accent: green
-paginate: 5
-paginate_path: "/blog/page:num/"
-fb_comments_on: "true"
+description: A jekyll theme for scientific blogging # This is a short site description that follows the title text
+accent: green # This selects the sites colour-scheme, as explained below
+paginate: 5 # This is the number of pages to dislay per page on the blog list page
+paginate_path: "/blog/page:num/" # This controls the path to the different pages of the blog post
+fb_comments_on: "true" # This toggles whether or not to use the facebook comments plugin
 ```
 
 ### Accents
