@@ -35,8 +35,11 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 ```
 
 ### Accents
-__green__ _(default)_: | __orange__: | __teal__: 
-![Green Accents](./assets/images/green_accent.png) | ![Orange Accents](./assets/images/orange_accent.png) | ![Teal Accents](./assets/images/teal_accent.png)  
+| __green__ _(default)_: | __orange__: | __teal__ |
+| ------------- |:-------------:| -----:|
+| ![Green Accents](./assets/images/green_accent.png) | ![Orange Accents](./assets/images/orange_accent.png) | ![Teal Accents](./assets/images/teal_accent.png) |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 __red__:  
