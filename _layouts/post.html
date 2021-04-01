@@ -30,7 +30,9 @@
         <div class="post-body">
           {{ content }}
         </div>
-        {% include fbcomments.html %}
+        {% if site.fb_comments_on == "true" %}
+          {% include fbcomments.html %}
+        {% endif %}
       </div>
     
     {% endcapture %}
