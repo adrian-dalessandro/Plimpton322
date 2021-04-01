@@ -13,7 +13,7 @@ beyond this, our goal is to provide an aesthetic & somewhat minimalist theme wit
 By default, the global configuration variables are stored in `_config.yml`. These are accessed through the `site._your_variable_` liquid variable throughout the project. The basic set of global configuration variables are:
 
 ```yaml
-title: Plimpton 322
+title: Plimpton 322 # This is the title of the site and controls the emphasized text in the site header
 description: A jekyll theme for scientific blogging
 accent: green
 paginate: 5
