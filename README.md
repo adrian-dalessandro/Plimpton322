@@ -5,6 +5,7 @@ Plimpton322 is a Jekyll theme for GitHub Pages that is primarily targeted toward
 The philosophy behind this project is to support scientific bloggers & scientific communication. To do so, we provide a theme with out-of-the-box support for:
 1. Latex-style equation support via MathJax ([see this post for an example](https://adrian-dalessandro.github.io/Plimpton322/2021/12/31/example-latex-math.html))
 2. Markdown-style code blocks ([see this post for an example](https://adrian-dalessandro.github.io/Plimpton322/2021/12/30/example-python-blog-post.html))
+
 beyond this, our goal is to provide an aesthetic & somewhat minimalist theme with built in customization options.
 
 ## Customizing
