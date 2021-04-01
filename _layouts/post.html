@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' |  relative_url }}">
   </head>
   <body class="{{ site.accent }}">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=1839402609408569&autoLogAppEvents=1" nonce="6Jje8Reu"></script>
     {% include header.html %}
     {% capture left_content %}
       <div class="card post-card">
@@ -29,6 +31,7 @@
           {{ content }}
         </div>
       </div>
+    <div class="fb-comments" data-href="https://adrian-dalessandro.github.io/Plimpton322/" data-width="" data-numposts="5"></div>
     {% endcapture %}
     
     {% capture right_content %}
