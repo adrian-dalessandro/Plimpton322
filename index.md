@@ -44,17 +44,71 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 ```
 
 ### Accents
-__green__ _(default)_:  
-![Green Accents](./assets/images/green_accent.png)  
-__orange__:   
-![Orange Accents](./assets/images/orange_accent.png)  
-__teal__:  
-![Teal Accents](./assets/images/teal_accent.png)  
+Accents are a simple variable class that specifies the colour scheme of the website. Simply assign an accent keyword to the global `accent` variable. The available accent keywords are listed below:
+
+| __green__ _(default)_: | __orange__: | __teal__: |
+| :-------------: |:-------------:| :-----:|
+| ![Green Accents](./assets/images/green_accent.png) | ![Orange Accents](./assets/images/orange_accent.png) | ![Teal Accents](./assets/images/teal_accent.png) |
+| __red__:   | __purple__:  |   |
+| ![Red Accents](./assets/images/red_accent.png) | ![Purple Accents](./assets/images/purple_accent.png)  |  |
+
 
 ### Author Cards
-### Adaptive Pages
-### Facebook Comments
+Author cards can be included in several places through the website. By default, any page with an adaptive layout can include an author card by merely adding an `affiliation` keyword to one of the header variables (discussed later). An author card is specified by modifying the yaml file found at `_data/authorship.yml`, which contains the following details:
 
-## Project philosophy
+```yaml
+picture: /assets/images/headshot.png
+name: Adrian D'Alessandro
+biography: I'm a Graduate Student at SFU studying computer vision, deep learning, weak supervision, and plant agriculture.
+affiliations:
+  - title: Medical Image Analysis Lab @ SFU
+    url: https://www.medicalimageanalysis.com/
+outgoing:
+  - title: Github
+    url: https://github.com/adrian-dalessandro/
+    icon: github
+  - title: Twitter
+    url: https://twitter.com/AdrianoDAlessa3
+    icon: twitter
+  - title: Email
+    url: mailto:acdaless@sfu.ca
+    icon: envelope
+```
+
+The `picture` variable is simple. Push a headshot, professional photo, or any other image to `/assets/images` and it will appear whereever the authorcard is specified. Likewise, the `name` variable is where you put your name, and the `biography` variable is a short description explaining something about you or your work.  
+
+The more interesting varaibles the the `affiliations` and `outgoing` variables. The `affiliations` variable stores an array of affiliations, with each array element taking the following format:
+```yaml
+- title: your-affiliations-title
+  url: the-path-to-affiliate-website.com
+```
+You may add as many affiliations as you wish and they will be listed underneathe your name in the title card. Similarly, the `outgoing` variable allows you to create a list of icons that link to some outgoing website. Similarly, this is specified as an array with each array element taking on the following format:
+```yaml
+  - title: title-of-website
+    url: path-to-website.com
+    icon: some-icon
+```
+The most complicated part of these variable entries is the `icon` entry. All icons reference the name of icons that can be found through the [Font Awesome website](https://fontawesome.com/icons). If you wish to use an icon, simply go to Font Awesome website and copy the name of the icon of interest and add it as the entry for the `icon` variable.
+
+### Adaptive Pages
+
+Adaptive pages are a template markup for placing sub-units of the website on different parts of a page. All adaptive pages are split into 2 columns and each page has a header for specifying which kinds of sub-units to place in the right and left column of the page. Consider the following example:
+```yaml
+---
+layout: adaptive
+title: About
+leftcolumn:
+  - content
+rightcolumn:
+  - affiliation
+  - post_list
+---
+```
+The left column of the page will hold the content (which refers to anything written in your markdown file), and the right column will hold your author card and a list of the 3 most recent posts to the website.
+
+### Facebook Comments
+Because Jekyll is a static website generator, there is no backend or database within which to store comments. The simplest alternative is to support an external commenting solution. For our purposes, we opted to go with Facebook comments. Set the global variable `fb_comments_on` to true, and visit the file at `_includes/fbcomments.html` to change the appID to one you have registered yourself through the facebook API.
+
 
 ## Contributing
+We welcome any and all contributions.
