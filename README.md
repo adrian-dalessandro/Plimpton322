@@ -45,6 +45,27 @@ Accents are a simple variable class that specifies the colour scheme of the webs
 
 
 ### Author Cards
+Author cards can be included in several places through the website. By default, any page with an adaptive layout can include an author card by merely adding an `affiliation` keyword to one of the header variables (discussed later). An author card is specified by modifying the yaml file found at `_data/authorship.yml`, which contains the following details:
+
+```yaml
+picture: /assets/images/headshot.png
+name: Adrian D'Alessandro
+biography: I'm a Graduate Student at SFU studying computer vision, deep learning, weak supervision, and plant agriculture.
+affiliations:
+  - title: Medical Image Analysis Lab @ SFU
+    url: https://www.medicalimageanalysis.com/
+outgoing:
+  - title: Github
+    url: https://github.com/adrian-dalessandro/
+    icon: github
+  - title: Twitter
+    url: https://twitter.com/AdrianoDAlessa3
+    icon: twitter
+  - title: Email
+    url: mailto:acdaless@sfu.ca
+    icon: envelope
+```
+
 ### Adaptive Pages
 ### Facebook Comments
 
