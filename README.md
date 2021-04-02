@@ -35,6 +35,8 @@ fb_comments_on: "true" # This toggles whether or not to use the facebook comment
 ```
 
 ### Accents
+Accents are a simple variable class that specifies the colour scheme of the website. Simply assign an accent keyword to the global `accent` variable. The available accent keywords are listed below:
+
 | __green__ _(default)_: | __orange__: | __teal__: |
 | :-------------: |:-------------:| :-----:|
 | ![Green Accents](./assets/images/green_accent.png) | ![Orange Accents](./assets/images/orange_accent.png) | ![Teal Accents](./assets/images/teal_accent.png) |
