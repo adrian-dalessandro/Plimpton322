@@ -106,6 +106,14 @@ rightcolumn:
 ```
 The left column of the page will hold the content (which refers to anything written in your markdown file), and the right column will hold your author card and a list of the 3 most recent posts to the website.
 
+### Navigation & Adding New Pages
+New pages are easy to create. You need to do two things. First, create a new markdown file in the root directory, for example `about.md`. Then in the `_data/navigation.yml` simply add the following array element to the `nav` variable:
+```yaml
+- title: About
+  url: /about.html
+```
+
+
 ### Facebook Comments
 Because Jekyll is a static website generator, there is no backend or database within which to store comments. The simplest alternative is to support an external commenting solution. For our purposes, we opted to go with Facebook comments. Set the global variable `fb_comments_on` to true, and visit the file at `_includes/fbcomments.html` to change the appID to one you have registered yourself through the facebook API.
 
