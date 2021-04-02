@@ -82,8 +82,24 @@ You may add as many affiliations as you wish and they will be listed underneathe
 The most complicated part of these variable entries is the `icon` entry. All icons reference the name of icons that can be found through the [Font Awesome website](https://fontawesome.com/icons). If you wish to use an icon, simply go to Font Awesome website and copy the name of the icon of interest and add it as the entry for the `icon` variable.
 
 ### Adaptive Pages
-### Facebook Comments
 
-## Project philosophy
+Adaptive pages are a template markup for placing sub-units of the website on different parts of a page. All adaptive pages are split into 2 columns and each page has a header for specifying which kinds of sub-units to place in the right and left column of the page. Consider the following example:
+```yaml
+---
+layout: adaptive
+title: About
+leftcolumn:
+  - content
+rightcolumn:
+  - affiliation
+  - post_list
+---
+```
+The left column of the page will hold the content (which refers to anything written in your markdown file), and the right column will hold your author card and a list of the 3 most recent posts to the website.
+
+### Facebook Comments
+Because Jekyll is a static website generator, there is no backend or database within which to store comments. The simplest alternative is to support an external commenting solution. For our purposes, we opted to go with Facebook comments. Set the global variable `fb_comments_on` to true, and visit the file at `_includes/fbcomments.html` to change the appID to one you have registered yourself through the facebook API.
+
 
 ## Contributing
+We welcome any and all contributions.
