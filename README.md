@@ -66,6 +66,21 @@ outgoing:
     icon: envelope
 ```
 
+The `picture` variable is simple. Push a headshot, professional photo, or any other image to `/assets/images` and it will appear whereever the authorcard is specified. Likewise, the `name` variable is where you put your name, and the `biography` variable is a short description explaining something about you or your work.  
+
+The more interesting varaibles the the `affiliations` and `outgoing` variables. The `affiliations` variable stores an array of affiliations, with each array element taking the following format:
+```yaml
+- title: your-affiliations-title
+  url: the-path-to-affiliate-website.com
+```
+You may add as many affiliations as you wish and they will be listed underneathe your name in the title card. Similarly, the `outgoing` variable allows you to create a list of icons that link to some outgoing website. Similarly, this is specified as an array with each array element taking on the following format:
+```yaml
+  - title: title-of-website
+    url: path-to-website.com
+    icon: some-icon
+```
+The most complicated part of these variable entries is the `icon` entry. All icons reference the name of icons that can be found through the [Font Awesome website](https://fontawesome.com/icons). If you wish to use an icon, simply go to Font Awesome website and copy the name of the icon of interest and add it as the entry for the `icon` variable.
+
 ### Adaptive Pages
 ### Facebook Comments
 
